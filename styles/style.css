@@ -1,5 +1,105 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: var(--font-family); 
+  background-color: var(--bg-color);
+  font-size: var(--font-size);
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  max-inline-size: 375px;
+  gap: 50px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr min-content 1fr;
+  align-items: center;
+  min-block-size: 668px;
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+}
+
+.header__theme-menu {
+  justify-self: end;
+}
+
+.header__title {
+  color: var(--stage-color);
+  font-weight: var(--font-weight-bold);
+  font-size: 116px;
+}
+
+.header__description {
+  background-color: var(--accent-color);
+  font-weight: var(--font-weight-bold);
+}
+
+.main {
+  display: grid;
+  gap: 50px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-inline-size: 375px;
+}
+
+.content__title {
+  color: var(--title-text-color);
+  margin-block-end: 20px;
+}
+
+.content__item-title {
+  color: var(--subtitle-text-color);
+  background-color: var(--accent-color);
+  margin-block-end: 10px;
+}
+
+.content__item-text {
+  color: var(--main-text-color);
+  margin-block-end: 20px;
+}
+
+.list__item-title {
+  color: var(--subtitle-text-color);
+  background-color: var(--accent-color);
+  margin-block-end: 10px;
+}
+
+.list__title {
+  color: var(--subtitle-text-color);
+  background-color: var(--accent-color);
+  margin-block-end: 20px;
+  font-weight: var(--font-weight);
+}
+
+.list__text {
+  color: var(--main-text-color);
+  margin-block-end: 20px;
+}
+
+.content__gallery {
+  display: grid;
+  max-inline-size: 375px;
+}
+
+.content__gallery-item {
+  display: grid;
+  margin-block-end: 10px;
+}
+
+.content__gallery-img {
+  display: block;
+  block-size: 100%;
+  inline-size: 100%;
+  object-fit: cover;
+  object-position: center;
 }
