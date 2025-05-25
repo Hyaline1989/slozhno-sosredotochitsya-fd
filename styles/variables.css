@@ -14,5 +14,8 @@
   --theme-text-color: #FF0070;
   --subtitle-text-color: #000028;
   --stage-color: #DB00FF;
+  --button-color:#ff0070;
+  --hover-border-color: rgb(255 0 112 / 0.4);
   --bg-image: url(../images/cover-image-dark.png);
+  --page-padding: 10px;
 }
