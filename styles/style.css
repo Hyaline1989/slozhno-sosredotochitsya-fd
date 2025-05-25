@@ -103,3 +103,18 @@
   object-fit: cover;
   object-position: center;
 }
+
+.footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  text-align: center;
+  min-block-size: 668px;
+}
+
+.footer__title {
+  color: var(--stage-color);
+  font-weight: var(--font-weight-bold);
+  font-size: 116px;
+}
