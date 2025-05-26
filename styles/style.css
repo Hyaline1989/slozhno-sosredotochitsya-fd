@@ -1,18 +1,17 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-
+/* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  font-family: var(--font-family); 
-  background-color: var(--bg-color);
-  font-size: var(--font-size);
   display: grid;
   grid-template-columns: 1fr;
-  align-items: center;
   justify-items: center;
-  margin: 0 auto;
-  max-inline-size: 375px;
+  align-items: center;
   gap: 50px;
+  margin: 0 auto;
+  font-family: var(--font-family);
+  font-size: var(--font-size); 
+  background-color: var(--bg-color);
+  max-inline-size: 375px;
 }
 
 .header {
@@ -21,12 +20,12 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
-  min-block-size: 668px;
+  padding: var(--page-padding);
+  padding-bottom: 66px;
   background-image: var(--bg-image);
   background-position: center;
   background-size: cover;
-  padding: var(--page-padding);
-  padding-bottom: 66px;
+  min-block-size: 668px;
 }
 
 .header__theme-menu {
@@ -35,14 +34,14 @@
 }
 
 .header__theme-menu-button {
-  background-color: transparent;
-  text-transform: lowercase;
-  line-height: 18px;
-  border: 1px transparent solid;
-  color: var(--button-color, rgb(255 0 112));
-  padding: 2px 13px 4px;
   display: flex;
   justify-content: center;
+  border: 1px transparent solid;
+  padding: 2px 13px 4px;
+  color: var(--button-color);
+  line-height: 18px;
+  text-transform: lowercase;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -70,8 +69,8 @@
 }
 
 .header__description {
-  background-color: var(--accent-color);
   font-weight: var(--font-weight-bold);
+  background-color: var(--accent-color);
 }
 
 .header__decorative-inscription {
@@ -79,9 +78,9 @@
   top: 10px;    
   right: 37px;    
   color: var(--accent-color);
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
   font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-size: var(--font-size);
   text-transform: uppercase;
   /* width: 25px;
   height: 25px; */
@@ -90,41 +89,41 @@
 .header__decorative-inscription::after {
   content: "";
   position: absolute;
-  right: -19px;
   top: 7px;
+  right: -19px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
   background-color: var(--accent-color);
   block-size: 9px;
   aspect-ratio: 1;
-  border-radius: 50%;
-  box-shadow: 0px 0px 4px 2px var(--accent-color);
 }
 
 .decorated-zone::before {
   content: "";
   position: absolute;
+  bottom: 0;
+  bottom: 10px;
+  left: 0;
+  left: 10px;
   width: 25px;
   height: 25px;
   border: 1px solid var(--accent-color);
-  bottom: 0;
-  left: 0;
-  border-right: none;
   border-top: none;
-  bottom: 10px;
-  left: 10px;
+  border-right: none;
 }
 
 .decorated-zone::after {
   content: "";
   position: absolute;
+  top: 0;
+  top: 10px;
+  right: 0;
+  right: 10px;
   width: 25px;
   height: 25px;
   border: 1px solid var(--accent-color);
-  top: 0;
-  right: 0;
-  border-left: none;
   border-bottom: none;
-  top: 10px;
-  right: 10px;
+  border-left: none;
 }
 
 .main {
@@ -135,52 +134,52 @@
 .content {
   display: grid;
   grid-template-columns: 1fr;
-  max-inline-size: 375px;
   padding: 0 var(--page-padding);
+  /* max-inline-size: 375px; */
 }
 
 .content__title {
-  color: var(--title-text-color);
   margin-block-end: 20px;
-  font-size: var(--font-size);
+  color: var(--title-text-color);
   font-weight: var(--font-weight-bold);
+  font-size: var(--font-size);
 }
 
 .content__item-title {
-  color: var(--subtitle-text-color);
-  background-color: var(--accent-color);
   margin-block-end: 10px;
-  font-size: var(--font-size);
+  color: var(--subtitle-text-color);
   font-weight: var(--font-weight-bold);
+  font-size: var(--font-size);
+  background-color: var(--accent-color);
 }
 
 .content__item-text {
-  color: var(--main-text-color);
   margin-block-end: 20px;
-  font-size: var(--font-size);
+  color: var(--main-text-color);
   font-weight: var(--font-weight);
+  font-size: var(--font-size);
 }
 
 .list__item-title {
-  color: var(--subtitle-text-color);
-  background-color: var(--accent-color);
   margin-block-end: 10px;
-  font-size: var(--font-size);
+  color: var(--subtitle-text-color);
   font-weight: var(--font-weight-bold);
+  font-size: var(--font-size);
+  background-color: var(--accent-color);
 }
 
 .list__title {
-  color: var(--subtitle-text-color);
-  background-color: var(--accent-color);
   margin-block-end: 20px;
+  color: var(--subtitle-text-color);
+  font-weight: var(--font-weight);
   font-weight: var(--font-weight);
   font-size: var(--font-size);
-  font-weight: var(--font-weight);
+  background-color: var(--accent-color);
 }
 
 .list__text {
-  color: var(--main-text-color);
   margin-block-end: 20px;
+  color: var(--main-text-color);
 }
 
 .content__gallery {
@@ -195,10 +194,10 @@
 
 .content__gallery-img {
   display: block;
-  block-size: 100%;
-  inline-size: 100%;
   object-fit: cover;
   object-position: center;
+  block-size: 100%;
+  inline-size: 100%;
 }
 
 .footer {
@@ -216,3 +215,35 @@
   font-size: 116px;
   text-shadow: 2px 2px 0 var(--accent-color);
 }
+
+@media (width >= 768px) {
+  .page {
+    max-inline-size: 768px;
+  }
+  .header {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr min-content 1fr;
+    min-block-size: 1024px;
+  }
+
+  .header__title {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    text-wrap: nowrap;
+  }
+
+  .header__description {
+    grid-column: 3/-1;
+    grid-row: 3/4;
+  }
+
+  .header__theme-menu {
+    grid-column: 4/4;
+  }
+
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
