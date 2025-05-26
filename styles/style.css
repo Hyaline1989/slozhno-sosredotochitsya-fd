@@ -242,7 +242,30 @@
   }
 
   .content {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .content__title {
+    grid-column: 1/2;
+  }
+
+  .content__item {
+    grid-column: 2/4;
+  }
+
+  .concentration__reduction {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .concentration__title {
+    inline-size: 236px;
+  }
+
+  .content__gallery {
+    grid-column: 1/4;
   }
 }
 
