@@ -252,6 +252,7 @@
 
   .content__item {
     grid-column: 2/4;
+    /* max-inline-size: 472px; */
   }
 
   .concentration__reduction {
@@ -266,6 +267,11 @@
 
   .content__gallery {
     grid-column: 1/4;
+    min-inline-size: 728px;
+  }
+
+  .footer {
+    min-inline-size: 768px;
   }
 }
 
