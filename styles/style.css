@@ -333,12 +333,17 @@
     display: flex;
     gap: 10px;
   }
-  .concentration__reduction {
-
+  .concentration__title {
+    inline-size: 315px;
   }
 
   .concentration__item {
     display: flex;
+    gap: 20px;
+  }
+
+  .concentration__items {
+    display: grid;
   }
   
   .content__gallery {
