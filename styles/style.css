@@ -56,6 +56,10 @@
 
 .header__theme-menu-button:focus {
   outline: none;
+  border-top: none;              
+  border-left: none;            
+  border-right: none;            
+  border-bottom: 1px solid var(--button-color);
 }
 
 .header__theme-menu-button:focus-visible {
