@@ -24,6 +24,28 @@
   --bg-image: url(../images/cover-image-light.png);
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+  --bg-color: #fff1f7;
+  --accent-color: #FF8DCB;
+  --decorate-color: #353430;
+  --main-text-color: #353430;
+  --title-text-color: #353430;
+  --header-shadow: #FF8DCB;
+  --footer-shadow: #ff0070;
+  --theme-text-color: #353430;
+  --subtitle-text-color: #353430;
+  --stage-color: #FFC2E6;
+  --button-color:#353430;
+  --hover-border-color: #353430;
+  --bg-image: url(../images/cover-image-light.png);
+  }
+
+  .header__decorative-inscription {
+    visibility: hidden;
+  }
+}
+
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
   .header__decorative-inscription {
