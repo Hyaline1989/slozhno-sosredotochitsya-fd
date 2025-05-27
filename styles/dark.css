@@ -21,6 +21,8 @@
   --stage-color: #DB00FF;
   --button-color:#ff0070;
   --hover-border-color: rgb(255 0 112 / 0.4);
+  --link-color: #F1B2CE;
+  --link-shadow: #ff0070;
   --bg-image: url(../images/cover-image-dark.png);
 }
 

@@ -38,6 +38,8 @@
   --stage-color: #FFC2E6;
   --button-color:#353430;
   --hover-border-color: rgba(50, 49, 45, 0.4);
+  --link-color: #353430;
+  --link-shadow: #FF8DCB;
   --bg-image: url(../images/cover-image-light.png);
   }
 
