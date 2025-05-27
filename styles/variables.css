@@ -9,8 +9,11 @@
   --font-size: 18px;
   --bg-color: #000028;
   --accent-color: #ff0070;
+  --decorate-color: #ff0070;
   --main-text-color: #F1B2CE;
   --title-text-color: #FF0070;
+  --header-shadow: #ff0070;
+  --footer-shadow: #ff0070;
   --theme-text-color: #FF0070;
   --subtitle-text-color: #000028;
   --stage-color: #DB00FF;
