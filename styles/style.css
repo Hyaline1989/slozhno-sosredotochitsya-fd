@@ -296,40 +296,48 @@
 
   .content__gallery {
     grid-column: 1/4;
-    min-inline-size: 728px;
+    min-inline-size: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
+    /* grid-template-rows: repeat(4, min-content); */
+    grid-auto-flow: column dense;
     gap: 20px;
+    min-block-size: 1091px;
   }
 
   .content__gallery-item {
     margin-block-end: 0;
   }
 
+  .gallery__title {
+    display: inline;
+    grid-column: 1/5;
+    grid-row: 1/2;
+  }
+
   .clowd {
     grid-column: 1/3;
-    grid-row: 1;
+    grid-row: 2/2;
   }
 
   .eat {
     grid-column: 3/4;
-    grid-row: 1/3;
+    grid-row: 2/4;
   }
 
   .music {
     grid-column: 1/2;
-    grid-row: 2/4;
+    grid-row: 3/5;
   }
 
   .read {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 3/3;
   }
 
   .walk {
     grid-column: 2/4;
-    grid-row: 3/4;
+    grid-row: 4/5;
   }
 
   .footer {
