@@ -1,6 +1,12 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .page {
   display: grid;
   grid-template-columns: 1fr;
@@ -13,6 +19,7 @@
   background-color: var(--bg-color);
   max-inline-size: 375px;
   padding: 0 var(--page-padding);
+  background-attachment: fixed;
 }
 
 .header {
@@ -201,7 +208,6 @@
 .list__title {
   margin-block-end: 20px;
   color: var(--subtitle-text-color);
-  font-weight: var(--font-weight);
   font-weight: var(--font-weight);
   font-size: var(--font-size);
   background-color: var(--accent-color);
