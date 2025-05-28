@@ -28,4 +28,7 @@
 
 .theme-dark .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
+    .header__decorative-inscription {
+    visibility: visible;
+    }
 }
