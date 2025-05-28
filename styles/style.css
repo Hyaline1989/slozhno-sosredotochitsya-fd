@@ -11,7 +11,13 @@
   font-family: var(--font-family);
   font-size: var(--font-size); 
   background-color: var(--bg-color);
+  background-attachment: fixed;
   max-inline-size: 375px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -20,13 +26,13 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
+  height: 100vh;
   padding: var(--page-padding);
   padding-bottom: 66px;
   background-image: var(--bg-image);
   background-position: center;
   background-size: cover;
   min-block-size: 668px;
-  height: 100vh;
 }
 
 .header__theme-menu {
@@ -55,11 +61,11 @@
 }
 
 .header__theme-menu-button:focus {
-  outline: none;
-  border-top: none;              
-  border-left: none;            
+  border-top: none;            
   border-right: none;            
-  border-bottom: 1px solid var(--button-color);
+  border-bottom: 1px solid var(--button-color);              
+  border-left: none;
+  outline: none;
 }
 
 .header__theme-menu-button:focus-visible {
@@ -81,8 +87,8 @@
 }
 
 .link:focus {
-  outline: none;
   border: 1px solid currentColor;
+  outline: none;
 }
 
 .link:focus-visible {
@@ -145,7 +151,7 @@
   position: absolute;
   top: 0;
   top: 10px;
-  right: 0;
+  /* right: 0; */
   right: 10px;
   width: 25px;
   height: 25px;
@@ -200,7 +206,6 @@
   margin-block-end: 20px;
   color: var(--subtitle-text-color);
   font-weight: var(--font-weight);
-  font-weight: var(--font-weight);
   font-size: var(--font-size);
   background-color: var(--accent-color);
 }
@@ -233,9 +238,9 @@
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
+  height: 100vh;
   text-align: center;
   min-block-size: 668px;
-  height: 100vh;
 }
 
 .footer__title {
@@ -295,13 +300,13 @@
   }
 
   .content__gallery {
-    grid-column: 1/4;
-    min-inline-size: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* grid-template-rows: repeat(4, min-content); */
     grid-auto-flow: column dense;
+    grid-column: 1/4;
     gap: 20px;
+    min-inline-size: 100%;
     min-block-size: 1091px;
   }
 
