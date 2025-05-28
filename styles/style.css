@@ -66,6 +66,29 @@
   border-bottom: 1px var(--button-color) solid;
 }
 
+.link {
+  color: var(--link-color);
+  text-decoration: none; 
+  text-shadow: 1px 1px 0 var(--link-shadow); 
+}
+
+.link:active {
+  color: var(--link-color);
+}
+
+.link:hover {
+  text-decoration: underline; 
+}
+
+.link:focus {
+  outline: none;
+  border: 1px solid currentColor;
+}
+
+.link:focus-visible {
+  border: 1px solid currentColor;
+}
+
 .header__title {
   color: var(--stage-color);
   font-weight: var(--font-weight-bold);
