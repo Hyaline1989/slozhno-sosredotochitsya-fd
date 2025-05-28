@@ -22,5 +22,5 @@
   --link-color: #F1B2CE;
   --link-shadow: #ff0070;
   --bg-image: url(../images/cover-image-dark.png);
-  --page-padding: 10px;
+  --page-padding: 0 10px;
 }
