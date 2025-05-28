@@ -395,6 +395,7 @@ body {
 
   .footer {
     min-inline-size: 984px;
+    min-block-size: 668px;
   }
 
 }
