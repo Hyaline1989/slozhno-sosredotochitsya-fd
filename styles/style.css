@@ -93,7 +93,7 @@ body {
 }
 
 .link:hover {
-  text-decoration: underline; 
+  border-bottom: 1px solid currentColor;
 }
 
 .link:focus {
@@ -258,7 +258,7 @@ body {
   grid-template-columns: 1fr;
   align-items: center;
   text-align: center;
-  /* min-block-size: 668px; */
+  min-block-size: 668px;
   height: 100vh;
   padding: var(--page-padding);
 }
