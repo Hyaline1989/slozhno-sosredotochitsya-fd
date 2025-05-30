@@ -35,7 +35,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-block-size: 668px;
+  max-block-size: 668px;
   height: 100vh;
   /* min-inline-size: 355px; */
   margin-block-end: 35px;
@@ -514,6 +514,6 @@
     min-inline-size: 984px;
     min-block-size: 668px;
     margin-right: 10px;
+    width: 100vw;
   }
-
 }
