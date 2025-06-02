@@ -27,12 +27,11 @@
   min-block-size: 668px;
   block-size: 100vh;
   margin-block-end: 40px;
-  padding-inline: 10px;
+  padding: 10px;
 }
 
 .header__theme-menu {
   justify-self: end;
-  padding-top: 10px;
 }
 
 .header__theme-menu-list {
