@@ -163,7 +163,7 @@
 .content {
   display: grid;
   grid-template-columns: 1fr;
-  margin-block-end: 40px;
+  margin-block-end: 30px;
 }
 
 .content__title {
@@ -186,30 +186,34 @@
   color: var(--main-text-color);
   font-weight: var(--font-weight);
   font-size: var(--font-size);
+  line-height: 23.4px;
 }
 
 .title-rools {
-  margin-top: 5px;
-  margin-bottom: 15px;
+  /* margin-top: 5px; */
+  margin-bottom: 20px;
 }
 
 .list__title {
   /* margin-top: 10px; */
-  margin-block-end: 20px;
+  margin-block-end: 10px;
   color: var(--subtitle-text-color);
   font-weight: var(--font-weight);
   font-size: var(--font-size);
   background-color: var(--accent-color);
+  /* line-height: 23.4px; */
 }
 
 .list__text {
-  margin-block-end: 10px;
+  margin-block-end: 20px;
   color: var(--main-text-color);
+  line-height: 23.4px;
 }
 
 .gallery__title {
   margin-block-end: 10px;
 }
+
 .content__gallery {
   margin-block-end: 40px;
 }
@@ -282,7 +286,7 @@
   .content {
     grid-template-columns: 1fr 2fr;
     gap: 20px;
-    margin-block-end: 70px;
+    margin-block-end: 60px;
     padding: var(--page-padding);
     /* padding-right: 0; */
   }
@@ -316,8 +320,8 @@
 
   .concentration__item-title {
     max-width: 728px;
-    max-height: 23px;
-    margin-bottom: 10px;
+    /* max-height: 23px; */
+    /* margin-bottom: 10px; */
   }
 
   .concentration__item-text {
@@ -329,15 +333,15 @@
   }
 
   .title-rools {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
 
   .list__title {
-    margin-block-end: 10px;
+    /* margin-block-end: 10px; */
   }
 
   .list__text {
-    margin-block-end: 20px;
+    /* margin-block-end: 20px; */
   }
 
   .content__gallery {
@@ -357,7 +361,7 @@
 
   .gallery__title {
     min-width: 728px;
-    max-height: 23px;
+    margin-block-end: 20px;
   }
 
   .clowd {
@@ -448,12 +452,12 @@
 
   .gallery__title {
     min-inline-size: 984px;
-    max-height: 23px;
+    /* max-height: 23px; */
   }
 
   .footer {
-    min-inline-size: 984px;
+    /* min-inline-size: 984px; */
     min-block-size: 668px;
-    width: 100vw;
+    /* width: 100vw; */
   }
 }
